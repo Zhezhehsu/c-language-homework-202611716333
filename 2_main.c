@@ -3,20 +3,20 @@
 
 #include <stdio.h>
 
-int main(void) {
-    float number;
-
-    if (scanf("%f", &number) != 1) {
-        return 1;
-    }
-
-    if (number > 0.0f) {
+int main() 
+{
+    float num;
+    printf("请输入一个实数：");
+    scanf("%f", &num);
+    if (num > 0) { 
         printf("正数\n");
-    } else if (number < 0.0f) {
+    } 
+    else if (num < 0) { 
         printf("负数\n");
-    } else {
+    } 
+    else { 
         printf("零\n");
     }
-
+    
     return 0;
 }
